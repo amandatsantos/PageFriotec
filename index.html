@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="bot moderador">
+    <meta name="description" content="s">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -16,23 +16,24 @@
     <header class="cabecalho">
         <img class='cabecalho-imagemlogo1' src="image/logo1.jpg" alt="logo Friotec">
         <nav class="cabecalho-nav">
-            <a class="cabecalho-item"> Friotec</a>
-            <a class="cabecalho-item">serviços</a>
-            <a class="cabecalho-item">contato</a>
+            <a class="cabecalho-item" href="#id-friotec"> Friotec</a>
+            <a class="cabecalho-item" href="#id-servicos">serviços</a>
+            <a class="cabecalho-item" href="#id-localizacao">localizacao</a>
+            <a class="cabecalho-item" href="#id-contato">contato</a>
         </nav>
     </header>
     <main class="conteudo">
-        <section class="conteudo-apresentacao">
+        <section id="id-friotec" class="conteudo-apresentacao">
             <div class="conteudo-escrito">
                 <h1 class="titulo-conteudo-principal">FRIOTEC </h1>
-                <h2 class="titulo-principal"> zelando pelo seu bem estar</h2>
-                <button class="button-orcamento">Faça seu orçamento </button>
+                <h2 class="titulo-principal"> Zelando pelo seu bem estar</h2>
+                <button class="button-orcamento" onclick="window.location=' https://api.whatsapp.com/send?phone=5577988647302&text=Olá%20gostaria%20de%20fazer%20um%20orçamento.'">Faça seu orçamento </button>
             </div>
             <div>
                 <img class="imagem_intro" src="image/logo1.jpg" alt="logo Friotec">
             </div>
         </section>
-        <section class="servicos">
+        <section id="id-servicos" class="servicos">
             <h3 class="titulo-principal-servico">Serviços </h3>
             <div class="conteudo-beneficio">
                 <ul class="lista-beneficios">
@@ -42,26 +43,41 @@
                     <li class="itens"> geladeira</li>
 
 
-                </ul><img class="beneficios-img" src="">
+                </ul>
+                <div class="carrosel-servico">
+                    <div class='container' id="img">
+                        <img src="image/img_principal.jpg">
+                        <img  src="image/logo1.jpg">
+                        
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="mapa">
+        <section id="id-localizacao" class="mapa">
             <h3 class="titulo-principal-localizacao">Localização </h3>
             <p> Nosso estabelecimento está localizado na nova itapetinga, agarradinho </p>
             <div class="conteudo-mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d962.3026667438874!2d-40.23974187081594!3d-15.256303105494487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7480bf7b01cfd55%3A0xc891126364ae0595!2sR.%20Ant%C3%B4nio%20Andrade%20Sobrinho%2C%2017%20-%20Itapetinga%2C%20BA%2C%2045700-000!5e0!3m2!1sen!2sbr!4v1654003660209!5m2!1sen!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-        <section class="contato">
+        <section id="id-contato" class="contato">
             <h3 class="titulo-principal-contato"> Entre em contato conosco</h3>
-            <p> Whatsapp : (77)99112-9480 </p>
-            <p> email: Friotec-refrigerar@hotmail.com</p>
-        </section> 
+            <div class="conteudo-contato">
+                <p><img src="image/whatsapp.png"> Whatsapp : (77) 9 9112-9480 </p>
+                <p> <img src="image/email.png"> Email: Friotec-refrigerar@hotmail.com</p>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>
-        <p class="copyright"> <a href="https://github.com/amandatsantos"> &copy;copyrigt amanda 2022</a> </p>
-        </p>
+        <div class="conteudo-rodape">
+            <p> Itapetinga - BA </p>
+            <p> CNPJ - 000000000</p>
+            <p class="copyright"> &copy;copyrigt Friotec-Refrigerar 2022 </p>
+            </p>
+            <p><a href="https://github.com/amandatsantos">desenvolvido por</a> </p>
+        </div>
     </footer>
+    <script src="script.js"> </script>
+</body>
 
 </html>
